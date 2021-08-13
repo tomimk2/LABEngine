@@ -1,0 +1,57 @@
+header {
+    grid-area: header;
+    width: 100%;
+    top: 0px;
+}
+
+.header {
+    letter-spacing: 0.12rem;
+    word-spacing: 2rem;
+    width: 100%;
+    
+}
+
+.listaMenu {
+    display: flex;
+    flex-wrap: nowrap;
+justify-content: space-around;
+    list-style: none;
+    text-align:center;   
+ }
+
+ .menu {
+    @include header;
+    color: $colorHeader;
+     
+ }
+.fondoContacto .menu {
+    @include header;
+    color: #000;
+
+ }
+
+.listaMenu li {
+    display: inline-block;
+    position: relative;
+    font-size: 1rem;
+
+    ul {
+     display: none;
+     right: 15%;
+     left: 0%;
+     justify-content: start;
+     position: absolute;
+
+     li {
+         display: block;
+         li:hover ul {
+         display:block;}
+         a{
+             &hover {
+            background-color: gray;
+             }
+             
+        }
+       }
+    }
+}

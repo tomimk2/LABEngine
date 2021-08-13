@@ -1,0 +1,25 @@
+footer {
+    grid-area: footer;
+    bottom: 0px;
+    background-color: black;
+    color: #fff;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1rem;
+    width: 100%;
+    
+
+    .footer {
+    
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .datos {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+}

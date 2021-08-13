@@ -1,0 +1,239 @@
+body {
+  background: linear-gradient(to bottom, #35363A, #3B4361, #607D8B); }
+
+p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 0.75rem; }
+
+a {
+  color: white; }
+
+header {
+  grid-area: header;
+  width: 100%;
+  top: 0px; }
+
+.header {
+  letter-spacing: 0.12rem;
+  word-spacing: 2rem;
+  width: 100%; }
+
+.listaMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+  text-align: center; }
+
+.menu {
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-shadow: 0 0 7px #fff, 0 0 10px #43BFF8, 0 0 21px #43BFF8, 0 0 42px #43BFF8, 0 0 82px #43BFF8, 0 0 92px #43BFF8, 0 0 102px #43BFF8, 0 0 151px #43BFF8;
+  color: #fff; }
+
+.fondoContacto .menu {
+  font-family: 'Coming Soon', cursive;
+  font-weight: bold;
+  font-size: 1.25rem;
+  text-decoration: none;
+  text-shadow: 0 0 7px #fff, 0 0 10px #43BFF8, 0 0 21px #43BFF8, 0 0 42px #43BFF8, 0 0 82px #43BFF8, 0 0 92px #43BFF8, 0 0 102px #43BFF8, 0 0 151px #43BFF8;
+  color: #000; }
+
+.listaMenu li {
+  display: inline-block;
+  position: relative;
+  font-size: 1rem; }
+  .listaMenu li ul {
+    display: none;
+    right: 15%;
+    left: 0%;
+    justify-content: start;
+    position: absolute; }
+    .listaMenu li ul li {
+      display: block; }
+      .listaMenu li ul li li:hover ul {
+        display: block; }
+      .listaMenu li ul li ahover {
+        background-color: gray; }
+
+.fondoHome {
+  display: grid;
+  grid-template-areas: "header header"  "imagen imagen"  "article tabla" "footer footer";
+  grid-template-columns: 45% auto;
+  grid-template-rows: 450px 450px 2fr auto;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  justify-items: center;
+  justify-content: stretch;
+  align-content: center;
+  align-items: center; }
+
+.fondoQuienes {
+  display: grid;
+  grid-template-areas: "header header header" "article article article" "imagen imagen imagen" "footer footer footer";
+  grid-template-rows: 450px 200px 400px auto;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  justify-items: center;
+  justify-content: stretch;
+  align-items: center;
+  align-content: center; }
+
+.fondoGaleria {
+  display: grid;
+  grid-template-areas: "header" "carrusel" "footer";
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  grid-template-columns: auto;
+  grid-template-rows: 450px 800px auto; }
+
+.fondoServicios {
+  display: grid;
+  grid-template-areas: "header header" "article imagen" "footer footer";
+  grid-template-columns: auto 50%;
+  grid-template-rows: 450px 400px auto;
+  grid-column-gap: 2px;
+  grid-row-gap: 2px;
+  justify-items: center;
+  justify-content: stretch;
+  align-items: center;
+  align-content: center; }
+
+.fondoContacto {
+  display: grid;
+  grid-template-areas: "header" "formulario" "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: 450px 500px auto;
+  justify-items: center;
+  justify-content: stretch;
+  align-items: center;
+  align-content: center;
+  background-image: url("../Imagenes/autofondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px); }
+
+.titulo1 {
+  font-size: 4rem; }
+
+.titulo2 {
+  font-size: 2rem; }
+
+.titulo1 {
+  color: #4682B4;
+  width: 100%;
+  grid-area: titulo;
+  font-size: 4rem;
+  font-family: '28 Days Later', sans-serif;
+  font-weight: bold;
+  text-align: center; }
+
+.fondoContacto .titulos {
+  color: black;
+  width: 100%;
+  grid-area: titulo;
+  font-size: 4rem;
+  font-family: '28 Days Later', sans-serif;
+  font-weight: bold;
+  text-align: center; }
+
+.titulo2 {
+  color: #E4B497;
+  font-family: 'Roboto', sans-serif;
+  font-style: oblique;
+  text-transform: capitalize; }
+
+.parrafos {
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.25rem; }
+
+.imagenLista {
+  grid-area: imagen;
+  width: 800px;
+  animation-name: agrandar;
+  animation-duration: 5s; }
+
+@keyframes agrandar {
+  0% {
+    width: 800px; }
+  25% {
+    width: 750px; }
+  50% {
+    width: 700px; }
+  75% {
+    width: 750px; }
+  100% {
+    width: 800px; } }
+
+table {
+  background-color: #92A5F0;
+  color: mintcream;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  border-color: white;
+  border-style: solid;
+  grid-area: tabla;
+  width: 600px; }
+  table #principal {
+    color: #35363A;
+    text-decoration: underline; }
+  table .Lista {
+    list-style-type: upper-latin;
+    list-style-position: outside; }
+  table th {
+    background-color: #455287;
+    color: mintcream; }
+
+.carousel {
+  grid-area: carrusel;
+  max-width: 850px; }
+
+.imagenesCentro {
+  grid-area: imagen; }
+
+.fondoForm {
+  grid-area: formulario;
+  border: solid #4682B4 10px;
+  background-color: #35363A;
+  border-radius: 10px;
+  position: relative;
+  width: 450px;
+  height: 450px;
+  left: 10px;
+  top: 50%; }
+
+.form {
+  margin: 0%;
+  padding: 5px;
+  position: absolute;
+  left: 10%;
+  top: 10%;
+  text-align: center; }
+
+.mensaje {
+  width: 250px;
+  height: 150px; }
+
+footer {
+  grid-area: footer;
+  bottom: 0px;
+  background-color: black;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1rem;
+  width: 100%; }
+  footer .footer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center; }
+  footer .datos {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap; }

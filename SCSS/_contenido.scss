@@ -1,0 +1,71 @@
+.imagenLista {
+    grid-area: imagen;
+    width: 800px;
+    animation-name: agrandar;
+    animation-duration: 5s;
+}
+
+@keyframes agrandar {
+    0%{ width: 800px; }
+    25%{ width: 750px; }
+    50%{ width: 700px;}
+    75%{ width: 750px;}
+    100%{ width: 800px;}
+}
+
+table {
+        background-color: #92A5F0;
+        color: mintcream;
+        font-family: 'Raleway', sans-serif;
+        font-size: 1rem;
+        border-color: white;
+        border-style: solid;
+        grid-area: tabla;
+            width: 600px;
+
+        #principal {
+            color: #35363A;
+            text-decoration: underline;
+        }
+        .Lista {
+            list-style-type: upper-latin;
+            list-style-position: outside;
+        }
+        
+        th {
+            background-color: #455287;
+            color: mintcream;
+        }
+    }
+.carousel {
+        grid-area: carrusel;
+        max-width: 850px; ; 
+}
+    
+.imagenesCentro {
+        grid-area: imagen;
+}
+    
+.fondoForm {
+        grid-area: formulario;
+        border: solid #4682B4 10px;
+        background-color: #35363A;
+        border-radius: 10px;
+        position: relative;
+        width: 450px;
+        height: 450px;
+        left: 10px;
+        top: 50%;
+    }
+    .form {
+        margin: 0%;
+        padding: 5px;
+        position: absolute;
+        left: 10%;
+        top: 10%;
+        text-align: center;
+    }
+    .mensaje {
+        width: 250px;
+        height: 150px;
+    }

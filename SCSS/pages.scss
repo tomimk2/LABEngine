@@ -1,0 +1,116 @@
+.fondoHome {
+    display: grid;
+    grid-template-areas: 
+    "header header" 
+    "imagen imagen" 
+    "article tabla"
+    "footer footer";
+    grid-template-columns: 45% auto;
+    grid-template-rows: 450px 450px 2fr auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    justify-items: center;
+    justify-content: stretch;
+    align-content: center;
+    align-items: center;
+}
+    
+    .fondoQuienes {
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "article article article"
+    "imagen imagen imagen"
+    "footer footer footer";
+    grid-template-rows: 450px 200px 400px auto;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    justify-items: center;
+    justify-content: stretch;
+    align-items: center;
+    align-content: center;
+    }
+    
+    .fondoGaleria {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "carrusel"
+    "footer";
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 450px 800px auto;
+    }
+    
+    .fondoServicios {
+        display: grid;
+        grid-template-areas: 
+        "header header"
+        "article imagen"
+        "footer footer";
+        grid-template-columns: auto 50%;
+        grid-template-rows: 450px 400px auto;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        justify-items: center;
+        justify-content: stretch;
+        align-items: center;
+        align-content: center;
+        }
+    
+    .fondoContacto {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "formulario"
+        "footer";
+        grid-template-columns: 100%;
+        grid-template-rows: 450px 500px auto;
+        justify-items: center;
+        justify-content: stretch;
+        align-items: center;
+        align-content: center;
+        background-image: url("../Imagenes/autofondo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        backdrop-filter: blur(7px);
+        -webkit-backdrop-filter: blur(7px);
+    }
+
+$i: (
+font-size: 10rem,
+);
+
+
+ @for $i from 1 through 2 {
+        .titulo#{$i} { font-size: 4rem / $i; }
+}
+      
+
+.titulo1 {
+    color: #4682B4;
+    @include titulos;
+       
+    }
+    
+.fondoContacto .titulos{
+    color: black;
+    @include titulos;
+
+  
+    }
+
+.titulo2 {
+        color: #E4B497;
+        font-family: 'Roboto', sans-serif;
+        font-style: oblique;
+        text-transform: capitalize;
+    }
+    
+.parrafos {
+        color: #fff;
+        font-family: 'Raleway', sans-serif;
+        font-size: $fontSizes1;
+    }
