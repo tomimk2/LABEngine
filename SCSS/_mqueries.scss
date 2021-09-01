@@ -1,0 +1,42 @@
+@media screen and (max-width: 576px) {
+    .fondoHome {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header" "imagen" "article" "tabla" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 4fr 3fr 5fr 0.5fr;
+    }
+    .fondoQuienes {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header" "article" "imagen" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 3fr 5fr 0.5fr;
+    }
+    .fondoGaleria {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header" "carrusel" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 0.5fr;
+    }
+    .fondoServicios {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header" "article" "imagen" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 4fr 0.5fr;
+    }
+    .fondoContacto {
+        width: 100%;
+        height: 100vh;
+        display: grid;
+        grid-template-areas: "header" "formulario" "footer";
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 5fr 0.5fr;
+    }
+}
