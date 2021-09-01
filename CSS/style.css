@@ -1,8 +1,5 @@
 body {
-  background: linear-gradient(to bottom, #35363A, #3B4361, #607D8B); 
-  margin: 1%;
-}
-  
+  background: linear-gradient(to bottom, #35363A, #3B4361, #607D8B); }
 
 p {
   font-family: 'Raleway', sans-serif;
@@ -10,6 +7,43 @@ p {
 
 a {
   color: white; }
+
+@media screen and (max-width: 576px) {
+  .fondoHome {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "imagen" "article" "tabla" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 4fr 3fr 5fr 0.5fr; }
+  .fondoQuienes {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "article" "imagen" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3fr 5fr 0.5fr; }
+  .fondoGaleria {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "carrusel" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 0.5fr; }
+  .fondoServicios {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "article" "imagen" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 4fr 0.5fr; }
+  .fondoContacto {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "formulario" "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 0.5fr; } }
 
 header {
   grid-area: header;
@@ -33,14 +67,7 @@ header {
   font-weight: bold;
   font-size: 1.25rem;
   text-decoration: none;
-  text-shadow: 0 0 7px #fff,
- 0 0 10px #43BFF8,
- 0 0 21px #43BFF8,
- 0 0 42px #43BFF8,
- 0 0 82px #43BFF8,
- 0 0 92px #43BFF8,
- 0 0 102px #43BFF8,
- 0 0 151px #43BFF8;
+  text-shadow: 0 0 7px #fff, 0 0 10px #43BFF8, 0 0 21px #43BFF8, 0 0 42px #43BFF8, 0 0 82px #43BFF8, 0 0 92px #43BFF8, 0 0 102px #43BFF8, 0 0 151px #43BFF8;
   color: #fff; }
 
 .fondoContacto .menu {
@@ -48,14 +75,7 @@ header {
   font-weight: bold;
   font-size: 1.25rem;
   text-decoration: none;
-  text-shadow: 0 0 7px #fff,
- 0 0 10px #43BFF8,
- 0 0 21px #43BFF8,
- 0 0 42px #43BFF8,
- 0 0 82px #43BFF8,
- 0 0 92px #43BFF8,
- 0 0 102px #43BFF8,
- 0 0 151px #43BFF8;
+  text-shadow: 0 0 7px #fff, 0 0 10px #43BFF8, 0 0 21px #43BFF8, 0 0 42px #43BFF8, 0 0 82px #43BFF8, 0 0 92px #43BFF8, 0 0 102px #43BFF8, 0 0 151px #43BFF8;
   color: #000; }
 
 .listaMenu li {
@@ -77,10 +97,7 @@ header {
 
 .fondoHome {
   display: grid;
-  grid-template-areas: "header header" 
- "imagen imagen" 
- "article tabla"
- "footer footer";
+  grid-template-areas: "header header"  "imagen imagen"  "article tabla" "footer footer";
   grid-template-columns: 45% auto;
   grid-template-rows: 450px 450px 2fr auto;
   grid-column-gap: 10px;
@@ -92,10 +109,7 @@ header {
 
 .fondoQuienes {
   display: grid;
-  grid-template-areas: "header header header"
- "article article article"
- "imagen imagen imagen"
- "footer footer footer";
+  grid-template-areas: "header header header" "article article article" "imagen imagen imagen" "footer footer footer";
   grid-template-rows: 450px 200px 400px auto;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
@@ -106,9 +120,7 @@ header {
 
 .fondoGaleria {
   display: grid;
-  grid-template-areas: "header"
- "carrusel"
- "footer";
+  grid-template-areas: "header" "carrusel" "footer";
   justify-items: center;
   align-content: center;
   align-items: center;
@@ -117,9 +129,7 @@ header {
 
 .fondoServicios {
   display: grid;
-  grid-template-areas: "header header"
- "article imagen"
- "footer footer";
+  grid-template-areas: "header header" "article imagen" "footer footer";
   grid-template-columns: auto 50%;
   grid-template-rows: 450px 400px auto;
   grid-column-gap: 2px;
@@ -131,9 +141,7 @@ header {
 
 .fondoContacto {
   display: grid;
-  grid-template-areas: "header"
- "formulario"
- "footer";
+  grid-template-areas: "header" "formulario" "footer";
   grid-template-columns: 100%;
   grid-template-rows: 450px 500px auto;
   justify-items: center;
